@@ -1,0 +1,86 @@
+# ─── Editor & tool configs ───────────────────────────────────────────────────
+.vscode/
+.idea/
+*.code-workspace
+.claude/
+.anthropic/
+.cursor/
+.aider*
+.continue/
+.agents/
+
+# ─── Python ──────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+.Python
+build/
+dist/
+*.egg-info/
+*.egg
+.eggs/
+
+# ─── Virtual environments ─────────────────────────────────────────────────────
+.venv/
+venv/
+env/
+ENV/
+.env
+
+# ─── Jupyter ─────────────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ─── Data & large artifacts ──────────────────────────────────────────────────
+# Todo el directorio data/ se regenera en runtime — no va al repo
+data/
+
+# Dataset (demasiado pesado — montado vía Kaggle)
+pascal-voc-2012-dataset/
+
+# Formatos de embeddings e índices
+*.npy
+*.npz
+*.faiss
+*.index
+
+# Pesos de modelos descargados localmente
+models/
+*.bin
+*.safetensors
+*.gguf
+*.onnx
+
+# Autoskills lock (companion de .agents/, que ya está ignorado)
+skills-lock.json
+
+# ─── Logs & experimentos ─────────────────────────────────────────────────────
+logs/
+*.log
+runs/
+mlruns/
+wandb/
+
+# ─── Test artifacts ──────────────────────────────────────────────────────────
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# ─── Outputs temporales ──────────────────────────────────────────────────────
+output/
+tmp/
+*.tmp
+*.bak
+
+# ─── OS ──────────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ─── Secrets ─────────────────────────────────────────────────────────────────
+.env.local
+secrets.yaml
+credentials.json
